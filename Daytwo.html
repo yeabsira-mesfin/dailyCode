@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Day Two</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             .nice{
                 font-family: sans-serif;
@@ -9,19 +10,24 @@
                 color: green;
                 text-align: center;
             }
+            p:target {
+    font-weight: bold;    
+}
         </style>
     </head>
     <body>
         <p id="mytext">My text</p>
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary</button>
         <script>
             let el = document.getElementById('mytext');
             el.classList.add('nice');
             el.classList.remove('nice')
             el.classList.toggle('nice')
 
-            if(el.classList.contains('nice')){
-                alert('el contains the \'nice \'class')
-            }
+            // if(el.classList.contains('nice')){
+            //     alert('el contains the \'nice \'class')
+            // }
         </script>
     </body>
 </html>
