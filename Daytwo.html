@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day Two</title>
+        <style>
+            .nice{
+                font-family: sans-serif;
+                font-size: 40px;
+                color: green;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="mytext">My text</p>
+        <script>
+            let el = document.getElementById('mytext');
+            el.classList.add('nice');
+            el.classList.remove('nice')
+            el.classList.toggle('nice')
+
+            if(el.classList.contains('nice')){
+                alert('el contains the \'nice \'class')
+            }
+        </script>
+    </body>
+</html>
