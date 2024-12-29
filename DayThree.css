@@ -1,6 +1,10 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
 *{
     margin: 0;
     padding: 0;
+    
 }
 .box{
     font-size: 2rem;
@@ -12,7 +16,7 @@
     text-align: center;
     border-radius: 200px;
     margin: 20px 21px 22px 23px;
-    box-sizing: border-box;
+   
 }
 *{
     margin: 0;
