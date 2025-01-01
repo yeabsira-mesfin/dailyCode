@@ -5,17 +5,34 @@
   <header>
     <title>Iframes,Videos</title>
     <style>
-        p{
-            height: 10px;
-            width: 100px;
-            display: inline;
-            background-color: aqua;
-        }
+      ul li:nth-child(2),li:nth-last-child(1){
+        color: blueviolet;
+      }
+      li:empty{
+        background-color: cornflowerblue;
+      }
+      input:checked{
+        
+        margin-left: 50px;
+      }
+      input:enabled{
+        font-weight: bold;
+      }
     </style>
   </header>
 
   <body>
-    <p>Hello</p>
+    <div>
+        <p>Hello</p>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li></li>
+            <li>item 5</li>
+        </ul>
+    </div>
     <iframe src="https://yeabsiramesfin.com/" frameborder="10"></iframe>
     <video width="500" height="300" type="">
       <source
@@ -23,18 +40,24 @@
         type="url"
       />
     </video>
+    <form action="">
+        <p><input type="checkbox">First Option</p>
+        <p><input type="checkbox">Second Option</p>
+        <p><input type="checkbox">Third Option</p>
+        
+    </form>
     <p id="p1" draggable="true">This element is draggable.</p>
 
     <script>
-     function dragstartHandler(ev) {
-  // Add different types of drag data
-  ev.dataTransfer.setData("text/plain", ev.target.innerText);
-  ev.dataTransfer.setData("text/html", ev.target.outerHTML);
-  ev.dataTransfer.setData(
-    "text/uri-list",
-    ev.target.ownerDocument.location.href,
-  );
-}
+      function dragstartHandler(ev) {
+        // Add different types of drag data
+        ev.dataTransfer.setData("text/plain", ev.target.innerText);
+        ev.dataTransfer.setData("text/html", ev.target.outerHTML);
+        ev.dataTransfer.setData(
+          "text/uri-list",
+          ev.target.ownerDocument.location.href
+        );
+      }
 
       window.addEventListener("DOMContentLoaded", () => {
         // Get the element by id
