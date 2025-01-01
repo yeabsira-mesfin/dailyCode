@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0 ">
-    <header>
-        <title>Iframes,Videos</title>
-    </header>
-    <body>
-        <iframe src="https://yeabsiramesfin.com/"  frameborder="10"></iframe>
-        <video width="500" height="300" type="">
-            <source src="https://youtu.be/RGnQq7QWQuY?si=TVSg25zpX_hw5o3Y" type="url">
-        </video>
-    </body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, intial-scale=1.0 " />
+  <header>
+    <title>Iframes,Videos</title>
+    <style>
+        p{
+            height: 10px;
+            width: 100px;
+            display: inline;
+            background-color: aqua;
+        }
+    </style>
+  </header>
+
+  <body>
+    <p>Hello</p>
+    <iframe src="https://yeabsiramesfin.com/" frameborder="10"></iframe>
+    <video width="500" height="300" type="">
+      <source
+        src="https://youtu.be/RGnQq7QWQuY?si=TVSg25zpX_hw5o3Y"
+        type="url"
+      />
+    </video>
+    <p id="p1" draggable="true">This element is draggable.</p>
+
+    <script>
+     function dragstartHandler(ev) {
+  // Add different types of drag data
+  ev.dataTransfer.setData("text/plain", ev.target.innerText);
+  ev.dataTransfer.setData("text/html", ev.target.outerHTML);
+  ev.dataTransfer.setData(
+    "text/uri-list",
+    ev.target.ownerDocument.location.href,
+  );
+}
+
+      window.addEventListener("DOMContentLoaded", () => {
+        // Get the element by id
+        const element = document.getElementById("p1");
+        // Add the ondragstart event listener
+        element.addEventListener("dragstart", dragstartHandler);
+      });
+    </script>
+  </body>
 </html>
