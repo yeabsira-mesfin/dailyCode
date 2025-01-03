@@ -6,4 +6,6 @@ Hoisting: moved to the top of the scope during compilation.
 
 Prototype-based: no need of a class to create an object.
 
+Tagged template: is a function call with a template literal. 
+
 Temporal dead zone (TDZ): from the start of the block until code execution reaches the place where the variable is declared and initialized.
