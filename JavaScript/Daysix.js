@@ -7,6 +7,14 @@ let inNeeded=1;
 // console.log(inMust)
 console.log(inNeeded)
 
-console.log(a);
 
 let a = 10;
+
+console.log(a -'1')
+console.log(a + '1')
+console.log((+a) + +"1")
+console.log(a * '1')
+console.log(a % '1')
+
+
+
