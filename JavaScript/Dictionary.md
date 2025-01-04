@@ -1,4 +1,10 @@
+Conditional statements: if...else and switch.
+
+Control flow statements: (if, for, while)
+
 Dynamic:  the interpreter assigns variables a type at runtime.
+
+Falsy Values: false, undefined, null, 0, NaN, and "git aadf "
 
 First-class: functions in that language are treated like any other variable.
 
