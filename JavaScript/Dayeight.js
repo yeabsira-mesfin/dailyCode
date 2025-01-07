@@ -4,6 +4,6 @@ for(let i=0;i<7;i++){
         continue;
        
     }
-    console.log('It gets better every single day!')
+   
     
 }
