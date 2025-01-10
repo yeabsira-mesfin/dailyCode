@@ -10,7 +10,6 @@ Welcome to my Daily Refresher! 🚀 Here, I dive into the world of web developme
 
 ⚡ JavaScript – Bringing websites to life with dynamic functionality.
 
-
 🧠 Why I do it:
 
 
