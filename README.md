@@ -17,3 +17,6 @@ Keep my skills sharp and up-to-date.
 Explore new techniques and trends.
 Solve fun challenges and build creative projects!
 🌱 Join me on this journey to grow, create, and code! Let's make the web more awesome!
+
+
+☝️ One line of code at a time! 🎉
