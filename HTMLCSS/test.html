@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Four Sections</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #0D7BB4; /* Set text color */
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .image-container {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .content-container {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+        .content-container h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content-container p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background-color: #FF7900; /* Button background color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #e67100; /* Slightly darker shade for hover effect */
+        }
+
+        /* Media Query for responsiveness */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-container,
+            .content-container {
+                padding: 0;
+                text-align: center;
+            }
+
+            .image-container img {
+                width: 80%;
+                max-width: 300px;
+            }
+
+            .content-container h1 {
+                font-size: 20px;
+            }
+
+            .content-container p {
+                font-size: 14px;
+            }
+
+            .btn {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1 -->
+        <div class="section">
+            <div class="image-container">
+                <img src="https://www.eosconference.com/wp-content/uploads/2024/05/unnamed.jpg" alt="Image 1" />
+            </div>
+            <div class="content-container">
+                <h4>Gaylord National Harbor Resort & Casino</h4>
+ <p><I>EOS Conference Host Hotel </I></p>
+                <p>201 Waterfront Street <br>
+National Harbor, MD 20745</p>
+               
+                <a class="btn" href="https://book.passkey.com/gt/219608839?gtid=81633f22a4da3e2f8f7ad3dc8a45639f">Check Availability </a>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section">
+            <div class="image-container">
+                <img  src="https://www.eosconference.com/wp-content/uploads/2024/05/3d0ee959c82565beef6b92c287a673c7.jpg" />
+            </div>
+            <div class="content-container">
+                <h4>MGM National Harbor</h4>
+                <p><i>Rocket Fuel Host Hotel <br>
+1.2 miles to Gaylord National Harbor</i></p>
+                <p>101 MGM National Avenue <br>
+National Harbor, MD 20745</p>
+                <a class="btn" href="https://book.passkey.com/event/50645810/owner/16066798/home">Check Availability </a>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section">
+            <div class="image-container">
+                <img src="https://www.eosconference.com/wp-content/uploads/2024/05/wasnh-suite-0049-hor-clsc.avif" alt="Image 3" />
+            </div>
+            <div class="content-container">
+                <h4>RESIDENCE INN NATIONAL HARBOR</h4>
+                <p><i>Additional Sleeping Rooms and Leadership Team Quarterly Session Room <br>140 ft to Gaylord National Harbor</i></p>
+                <p>192 Waterfront St <br>
+National Harbor, Maryland 20745</p>
+                <a class="btn" href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1712855687762&key=GRP&app=resvlink">Check Availability </a>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section">
+            <div class="image-container">
+                <img src="https://www.eosconference.com/wp-content/uploads/2024/05/ar-waswa-one-bedroom-suite-71338-85366_Classic-Hor.avif" alt="Image 4" />
+            </div>
+            <div class="content-container">
+                <h4>AC Hotel National Harbor</h4>
+                <p><i>Additional Sleeping Rooms and Leadership Team Quarterly Session Room <br>.1 miles to Gaylord National Harbor</i></p>
+                <p>156 Waterfront Street <br>
+National Harbor, Maryland 20745</p>
+                <a class="btn" href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1712855526955&key=GRP&app=resvlink">Check Availability</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
