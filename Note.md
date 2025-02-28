@@ -19,3 +19,12 @@ DELETE: removes data
 4xx: client error === request doesn't have what it needs 400==bad request, 401=unauthorized, 404 = not found
 
 5xx: server error ===  500 = internal server error.
+
+
+git init        === initialize git repo
+git add <file>  === add files to index
+git status      === display the differences between the working area and the tree.
+git commit      === commit changes in index.
+git push        === push to remote repo.
+git pull        === pull latest version from remote repo
+git clone       === clone remote repo to your local file
