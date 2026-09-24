@@ -1,0 +1,13 @@
+rules:
+  - id: node-dangerous-eval
+    message: Avoid eval because untrusted input can become executable code.
+    severity: ERROR
+    languages: [javascript]
+    pattern: eval(...)
+  - id: node-child-process-shell
+    message: Review child process execution carefully and avoid shell execution with untrusted input.
+    severity: WARNING
+    languages: [javascript]
+    pattern-either:
+      - pattern: require("child_process").exec(...)
+      - pattern: require('child_process').exec(...)

@@ -1,0 +1,20 @@
+{
+  "name": "devsecops-security-pipeline",
+  "version": "1.0.0",
+  "description": "Application security CI/CD pipeline with SAST, DAST, SCA, secrets and container scanning",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.1"
+  }
+}
